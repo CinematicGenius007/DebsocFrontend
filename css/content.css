@@ -46,6 +46,21 @@ nav {
   font-weight: 500;
 }
 
+/* Media queries */
+@media screen and (max-width: 700px) {
+  #main-panel {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  nav {
+    border-radius: 0;
+  }
+}
+
+
 /* Main */
 main {
   display: flex;
