@@ -1,0 +1,165 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+#main-panel {
+  width: 80%;
+  min-width: 500px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: rgb(230, 230, 230) 0 0 4px 5px;
+  background-color: #3f1e94;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: white;
+  padding: 20px 10px;
+  border-radius: 15px 15px 0 0;
+}
+
+#logo {
+  /*color: #0d044b;*/
+  color: #3f1e94;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: calc(20px + 3vw);
+}
+
+#nav-links {
+  word-spacing: calc(12px + 1vw);
+  text-align: right;
+  min-width: 268px;
+  flex-basis: 50%;
+  max-width: 400px;
+  align-self: flex-end;
+  margin-right: calc(10px + 2vw);
+  overflow: hidden;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #49378a;
+  font-weight: 500;
+}
+
+/* Main */
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 500px;
+}
+
+#contact-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contact-detail div {
+  padding: 20px 0;
+}
+
+#contact-detail i {
+  width: 20px;
+}
+
+#social-links {
+  font-size: 1.1rem;
+  max-width: 240px;
+  width: 80%;
+  color: #a387eb;
+  display: flex;
+  justify-content: space-between;
+}
+
+#social-links i {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-property: color, background-color;
+  transition-delay: 0.2s;
+}
+
+#social-links i:hover {
+  color: white;
+  background-color: #ee9fb1;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+#contact-info, #main-form {
+  width: 40%;
+}
+
+#main-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.form-control {
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-radius: 7px;
+  box-shadow: rgb(245, 245, 245) 0 0 3px 4px;
+}
+
+.form-control:focus {
+  border-color: #3f1e94 !important;
+  box-shadow: #3f1e944d 0 0 4px 4px !important;
+}
+
+#first-name, #last-name {
+  max-width: 200px;
+}
+
+#form-message {
+  min-height: 140px;
+}
+
+#main-form button {
+  background-color: #3f1e94;
+  color: white;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  height: 32px;
+  padding: 0 14px;
+  float: right;
+}
+
+/* Media queries for main */
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main-form, #contact-info {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+}
